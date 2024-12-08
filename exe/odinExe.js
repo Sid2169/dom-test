@@ -25,3 +25,11 @@ pinkDiv.innerHTML = `
 `
 pinkDiv.style.cssText = "border: 1px solid black; background: pink;"
 content.appendChild(pinkDiv);
+
+const btn = document.querySelector("#click-me");
+btn.addEventListener("click", function(e) {
+    if (btn.style.background === "blue") btn.style.background = "white";
+    else e.target.style.background = "blue";
+})
+
+
